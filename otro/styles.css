@@ -1,0 +1,185 @@
+/* Estilos generales */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #2d3748;
+  min-height: 100vh;
+}
+
+/* Header */
+header {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+  border-radius: 12px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+/* Secciones */
+section {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+section h2 {
+  color: #764ba2;
+  border-bottom: 3px solid #f5576c;
+  padding-bottom: 10px;
+  margin-bottom: 20px;
+}
+
+section p {
+  line-height: 1.8;
+  color: #4a5568;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+th,
+td {
+  padding: 15px;
+  text-align: left;
+  border: none;
+}
+
+th {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.9em;
+  letter-spacing: 1px;
+}
+
+tr:nth-child(even) {
+  background-color: #f7fafc;
+}
+
+tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tr:hover {
+  background-color: #e6f7ff;
+  transition: background-color 0.3s ease;
+}
+
+/* Estilos para página 404 */
+#message {
+  background: white;
+  max-width: 450px;
+  margin: 100px auto 16px;
+  padding: 40px 30px 20px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+#message h1 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #2d3748;
+  margin: 0 0 16px;
+}
+
+#message h2 {
+  color: #f5576c;
+  font-weight: bold;
+  font-size: 72px;
+  margin: 0 0 15px;
+  text-align: center;
+}
+
+#message h3 {
+  color: #764ba2;
+  font-weight: 600;
+  font-size: 18px;
+  margin: 20px 0 12px;
+}
+
+#message p {
+  line-height: 1.6;
+  margin: 16px 0 24px;
+  font-size: 15px;
+  color: #4a5568;
+}
+
+#message code {
+  background-color: #f7fafc;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+  color: #764ba2;
+}
+
+#message a {
+  display: block;
+  text-align: center;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  padding: 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+#message a:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 16px rgba(102, 126, 234, 0.4);
+}
+
+#load {
+  color: #718096;
+  text-align: center;
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+/* Responsivo */
+@media (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  header h1 {
+    font-size: 1.8em;
+  }
+
+  section {
+    padding: 20px;
+  }
+
+  #message {
+    margin-top: 20px;
+    padding: 30px 20px;
+  }
+
+  #message h2 {
+    font-size: 52px;
+  }
+}
