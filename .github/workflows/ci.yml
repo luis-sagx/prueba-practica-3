@@ -2,9 +2,9 @@ name: CI/CD Workflow
 
 on:
   push:
-    branches: [ main ]
+    branches: [main]
   pull_request:
-    branches: [ main ]
+    branches: [main]
 
 jobs:
   build-and-test:
@@ -28,9 +28,5 @@ jobs:
       - name: Ejecutar pruebas
         run: npm test
 
-      - name: Run tests with coverage
-        run: npm run coverage
-      - name: Simular despliegue
-        run: |
-          echo "Despliegue simulado la aplicacion paso 
-          Lint y Pruebas correctamente"
+      - name: despliegue
+        run: npm ci
